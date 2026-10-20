@@ -1,0 +1,17 @@
+name = "discord-mcp-pessoal"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+DISCORD_MODO = "user"
+ENVIOS_POR_MINUTO = "20"
+INTERVALO_ENVIO_MS = "1500"
+INBOX_JANELA_HORAS = "48"
+FUSO = "America/Sao_Paulo"
+
+[durable_objects]
+bindings = [{ name = "CONTA", class_name = "ContaDiscord" }]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ContaDiscord"]

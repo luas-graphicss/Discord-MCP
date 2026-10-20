@@ -1,0 +1,35 @@
+{
+  "name": "discord-mcp-pessoal",
+  "version": "1.0.0",
+  "description": "Servidor MCP para operar uma conta pessoal (secundaria) do Discord: inbox, leitura, resposta, threads, foruns, convites e amizades. Sem dependencias.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "discord-mcp-pessoal": "./servidor.mjs"
+  },
+  "main": "./servidor.mjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node servidor.mjs",
+    "http": "node servidor.mjs --http",
+    "check": "node servidor.mjs --check"
+  },
+  "files": [
+    "servidor.mjs",
+    "worker.js",
+    "nucleo.js",
+    "api-discord.js",
+    "estado.js",
+    "executor.js",
+    "ferramentas.js",
+    "formato.js",
+    "gateway.js",
+    "mcp.js",
+    "rotas.js",
+    "terminal.js",
+    "wrangler.toml"
+  ],
+  "license": "MIT"
+}
